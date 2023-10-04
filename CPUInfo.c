@@ -17,7 +17,7 @@ int main() {
     int pro_count = 0;
 
     while ((read = getline(&line, &len, proc)) != -1) {			// while there are lines to read
-        if (strstr(line, "cache size") != NULL) {				// is “cache size” is present
+        if (strstr(line, "cache size") != NULL) {				// if “cache size” is present
             printf("Processor %d with a %s", pro_count, line);
             pro_count++;
         }
