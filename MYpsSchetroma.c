@@ -20,7 +20,7 @@ main(int argc, char **argv) {
                     exit(1);
                 }
                 break;
-            case's':
+            case 's':
                 if (optarg[0] == '-') {
                     fprintf(stderr, "%s\n", optarg);
                     exit(1);
