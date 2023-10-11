@@ -14,7 +14,7 @@ main(int argc, char **argv) {
     while ((option_index = getopt(argc, argv, "p:s:U:S:v:c:"))!= -1) {
 
         switch (option_index) {
-            case 'p':
+            case 'p':                      
                 if (optarg[0] == '-') {
                     fprintf(stderr, "%s\n", optarg);
                     exit(1);
@@ -46,10 +46,9 @@ main(int argc, char **argv) {
                 break;
             case 'c':
 
-
-
+        }
+    }
 }
-
 
 
 
