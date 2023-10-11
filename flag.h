@@ -1,7 +1,7 @@
+#ifndef HEADER_FILE
+#define HEADER_FILE
 
-
-int main(int argc, char **argv) {
-    struct flags {
+    struct flag {
         char p;
         char s;
         char U;
@@ -10,5 +10,7 @@ int main(int argc, char **argv) {
         char c;
     }
 
+    typedef struct flag flags;
 
-}
+
+#endif
