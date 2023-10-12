@@ -1,27 +1,11 @@
 
-CC = gcc		# compiler gcc
+output: MYpsSchetroma.o 
+	gcc MYpsSchetroma.o -o    out
 
+CPUinfo.o: MYpsSchetroma.c
+	gcc -c MYpsSchetroma.c
+MemInfo.o: MYpsSchetroma.c
+	gcc -c MYpsSchetroma.c
 
-CFLAGS = -Wall -Werror			## flags for compiler		
-
-SOURCES = MYpsSchetroma.c CPUInfo.c MemInfo.c
-HEADERS = flag.h
-EXECUTABLE = MypsSchetroma
-
-
-OBJECTS = $(SOURCES:.c=.o)
-
-all: $(EXECUTABLE)
-
-
-$(EXECUTABLE): $(OBJECTS)					# compile sources files into executable
-	$(CC) $(CFLAGS) -o $@ $^
-
-
-%.o: %.c $(HEADERS)							# compiles sources into object
-	$(CC) $(CFLAGS) -c -o $@ $<
-
-
-clean:								# clean
-	rm -f $(EXECUTABLE) $(OBJECTS)
-
+clean: 
+	rm *.o out
