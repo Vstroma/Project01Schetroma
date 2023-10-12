@@ -8,7 +8,7 @@ int main(int argc, char **argv) {
     int opt;
     char *path = NULL;
 
-    FILE *file = fopen("/proc/meminfo", "r");		 //open directory for reading information
+    //FILE *file = fopen("/proc/meminfo", "r");		 //open directory for reading information
 
     while((opt = getopt(argc, argv, "p:"))!= -1) {	 // parse command line arguments
         switch(opt) {               
@@ -57,3 +57,4 @@ int main(int argc, char **argv) {
     return 0;
 }
 
+}

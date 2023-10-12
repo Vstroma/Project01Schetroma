@@ -1,11 +1,10 @@
 
-
-CC = gcc				# compiler gcc
+CC = gcc		# compiler gcc
 
 
 CFLAGS = -Wall -Werror			## flags for compiler		
 
-SOURCES = MypsSchetroma.c readproc.c CPUInfo.c MemInfo.c
+SOURCES = MYpsSchetroma.c CPUInfo.c MemInfo.c
 HEADERS = flag.h
 EXECUTABLE = MypsSchetroma
 
@@ -25,3 +24,4 @@ $(EXECUTABLE): $(OBJECTS)					# compile sources files into executable
 
 clean:								# clean
 	rm -f $(EXECUTABLE) $(OBJECTS)
+
